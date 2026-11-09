@@ -1,0 +1,11 @@
+# Files in the repo root that must NOT be uploaded as public site assets
+.assetsignore
+wrangler.jsonc
+README.md
+.gitignore
+.nojekyll
+.git
+.wrangler
+node_modules
+package.json
+package-lock.json

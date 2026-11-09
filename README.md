@@ -27,6 +27,16 @@ python -m http.server 8080
 3. Framework preset: **None**. Build command: *(leave empty)*. Build output directory: `/` (or `.`).
 4. Save and deploy. Add `hiterratech.com` under **Custom domains**.
 
+### Or with Wrangler (Workers static assets)
+
+`wrangler.jsonc` and `.assetsignore` are included, so this also works:
+
+```sh
+npx wrangler deploy
+```
+
+In the Cloudflare dashboard (Workers Builds) use deploy command `npx wrangler deploy` and leave the build command empty. `_headers` and `404.html` are honoured; repo-only files are excluded via `.assetsignore`.
+
 ## Deploy — GitHub Pages
 
 1. Repo → **Settings → Pages**.
